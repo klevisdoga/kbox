@@ -1,5 +1,6 @@
 @use "../../partials/variables" as *;
 @use "../../partials/keyframes" as *;
+@use "../../partials/mixins" as *;
 
 .hero {
     position: relative;
@@ -80,6 +81,10 @@
 
         &-subtitle {
             width: 20rem;
+
+            @include tablet{
+                width: 35rem;
+            }
         }
 
         &-button {

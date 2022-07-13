@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
 @font-face {
     font-family: SegoeProBlack;
@@ -17,12 +18,20 @@
 h1 {
     font-family: SegoeProBlack, sans-serif;
     margin: 0;
+
+    @include tablet{
+        font-size: 2.8rem;
+    }
 }
 
 h2 {
     font-family: SegoeProBlack, sans-serif;
     font-weight: 600;
     font-size: 1.625rem;
+
+    @include tablet{
+        font-size: 2.8rem;           
+    }
 }
 
 h4 {
@@ -36,6 +45,11 @@ h4 {
 p {
     font-family: SegoeProBlack, sans-serif;
     font-weight: 300;
+
+    @include tablet{
+        font-size: 2.1rem;
+        margin: .5rem;
+    }
 }
 
 span {
@@ -54,4 +68,8 @@ li {
 button {
     font-family: SegoeProBlack, sans-serif;
     font-weight: 600;
+
+    @include tablet{
+        font-size: 15px;
+    }
 }

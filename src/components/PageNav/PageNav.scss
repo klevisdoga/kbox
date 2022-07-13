@@ -43,14 +43,18 @@
 
     &__actions{
         display: flex;
-        // justify-content: space-between;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         width: 100%;
 
         & span {
             font-weight: 300;
             color: $primary-three;
+        }
+
+        &-aside{
+            display: flex;
+            align-items: center;
         }
     }
 
@@ -67,5 +71,6 @@
     &__cart{
         width: 22.5px;
         height: 19px;
+        margin-right: 1rem;
     }
 }

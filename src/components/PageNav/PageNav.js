@@ -26,8 +26,10 @@ export default function PageNav() {
                     <div className='header__actions'>
                         <img src={search} alt='search icon' className='header__search' />
                         <img src='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31' alt='microsoft' className='header__logo' />
-                        <img src={'https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png'} alt='shopping cart icon' className='header__cart' />
-                        <span>Sign in</span>
+                        <div className='header__actions-aside'>
+                            <img src={'https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png'} alt='shopping cart icon' className='header__cart' />
+                            <span>Sign in</span>
+                        </div>
 
                     </div>
                 </header>
@@ -63,8 +65,10 @@ export default function PageNav() {
                 <div className='header__actions'>
                     <img src={search} alt='search icon' className='header__search' />
                     <img src='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31' alt='microsoft' className='header__logo' />
-                    <img src={'https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png'} alt='shopping cart icon' className='header__cart' />
-                    <span>Sign in</span>
+                    <div className='header__actions-aside'>
+                        <img src={'https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png'} alt='shopping cart icon' className='header__cart' />
+                        <span>Sign in</span>
+                    </div>
 
                 </div>
             </header>
