@@ -12,11 +12,27 @@
     font-weight: 300;
 }
 
+
+//Headings
 h1 {
     font-family: SegoeProBlack, sans-serif;
     margin: 0;
 }
 
+h2 {
+    font-family: SegoeProBlack, sans-serif;
+    font-weight: 600;
+    font-size: 1.625rem;
+}
+
+h4 {
+    font-family: SegoeProBlack, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: $link-dark-two;
+}
+
+//Paragraphs and Sub-Headings
 p {
     font-family: SegoeProBlack, sans-serif;
     font-weight: 300;
@@ -24,12 +40,17 @@ p {
 
 span {
     font-size: 13px;
+    font-family: SegoeProBlack, sans-serif;
+    font-weight: 600;
+    color: $primary-two;
 }
 
+//List Items and Buttons
 li {
     font-family: sans-serif;
     color: $link-dark;
 }
+
 button {
     font-family: SegoeProBlack, sans-serif;
     font-weight: 600;

@@ -1,4 +1,5 @@
 @use "../../partials/variables" as *;
+@use "../../partials/keyframes" as *;
 
 .hero {
     position: relative;
@@ -34,9 +35,9 @@
         & span {
             color: rgb(219, 219, 219);
             transform: rotate(90deg);
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 200;
-            height: 2.25rem;
+            height: 2.5rem;
         }
     }
 
@@ -75,30 +76,34 @@
         align-items: center;
         width: 100%;
         color: $primary-one;
-        animation: textSlide .3s ease-in-out;
+        animation: textSlide 0.3s ease-in-out;
 
         &-subtitle {
             width: 20rem;
         }
 
         &-button {
-            background-color: $secondary-two;
-            color: $secondary-three;
+            background: none;
             border: none;
-            padding: 0.25rem 1.5rem;
-            margin-top: 1rem;
+            color: $secondary-three;
+            height: 1.2rem;
+            margin-bottom: -9px;
+
+            &:hover {
+                animation: bottomBorderHero .2s linear;
+                animation-fill-mode:forwards;
+            }
 
             &-container {
+                background-color: $secondary-two;
+                border: none;
+                padding: 0.25rem 1.5rem;
+                margin-top: 1rem;
+                cursor: pointer;
+                height: 1.75rem;
             }
         }
     }
 }
 
-@keyframes textSlide {
-    0% {
-        left: 1rem;
-    }
-    100% {
-        left: 0;
-    }
-}
+

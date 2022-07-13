@@ -1,0 +1,49 @@
+@use './variables' as *;
+
+
+//Page Main Content Animation
+@keyframes bottomBorderContent {
+    0% {
+        border-bottom: 2px solid rgba($color: $secondary-two, $alpha: .0);
+    }
+    50%{
+        border-bottom: 2px solid rgba($color: $secondary-two, $alpha: .5);
+    }
+    100% {
+        border-bottom: 2px solid rgba($color: $secondary-two, $alpha: 1.0);
+    }
+}
+
+@keyframes bottomBorderContentFN {
+    0% {
+        border-bottom: 2px solid rgba($color: $primary-three, $alpha: .0);
+    }
+    50%{
+        border-bottom: 2px solid rgba($color: $primary-three, $alpha: .5);
+    }
+    100% {
+        border-bottom: 2px solid rgba($color: $primary-three, $alpha: 1.0);
+    }
+}
+
+//Page Hero Animation
+@keyframes bottomBorderHero {
+    0% {
+        border-bottom: 2px solid rgba($color: $secondary-three, $alpha: .0);
+    }
+    50%{
+        border-bottom: 2px solid rgba($color: $secondary-three, $alpha: .5);
+    }
+    100% {
+        border-bottom: 2px solid rgba($color: $secondary-three, $alpha: 1.0);
+    }
+}
+
+@keyframes textSlide {
+    0% {
+        left: 1rem;
+    }
+    100% {
+        left: 0;
+    }
+}

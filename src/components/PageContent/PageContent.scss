@@ -1,0 +1,152 @@
+@use "../../partials/variables" as *;
+@use "../../partials/mixins" as *;
+@use "../../partials/keyframes" as *;
+
+.main {
+    background-color: $primary-one;
+    height: fit-content;
+
+    &__options {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        padding: 2rem 0.5rem;
+
+        &-container {
+            width: 33.3%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+            cursor: pointer;
+        }
+
+        &-image {
+            width: 54px;
+        }
+
+        &-title {
+            font-size: 1rem;
+        }
+    }
+
+    &__cards {
+        background-color: $primary-one;
+        &-card {
+            padding: 0 6px;
+            position: relative;
+            margin-bottom: 6px;
+            height: 30rem;
+
+            &--white {
+                height: 35rem;
+
+                &-fortnite {
+                    & button {
+                        color: $primary-three;
+
+                        &:hover {
+                            color: $primary-three;
+                            animation: bottomBorderContentFN 0.2s linear;
+                            animation-fill-mode: forwards;
+                        }
+                    }
+                }
+            }
+
+            &-image {
+                width: 100%;
+            }
+
+            &-text {
+                position: absolute;
+                z-index: 1;
+                bottom: 0;
+                padding: 2rem 0.5rem;
+                color: $primary-one;
+                width: 96.75%;
+                height: 15rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                & h2,
+                p {
+                    padding-left: 6px;
+                }
+
+                &--grey {
+                    background-color: #2e2e2e;
+
+                    & h2 {
+                        margin-bottom: 0.5rem;
+                        margin-top: 0;
+                    }
+
+                    & p {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &--green {
+                    background-color: $primary-two;
+                    height: 17.25rem;
+
+                    & h2 {
+                        margin-bottom: 0.5rem;
+                        margin-top: 0;
+                    }
+                }
+
+                &--white {
+                    color: $primary-three;
+                    padding-left: 1rem;
+                    padding-top: 8rem;
+                    height: 25rem;
+
+                    &--title {
+                        font-size: 3rem;
+                        margin: 0;
+                        width: 16rem;
+                        line-height: 3rem;
+                    }
+
+                    &--span {
+                        height: 1rem;
+                        width: 4.5rem;
+                        background-color: $secondary-two;
+                        transform: skewX(-30deg);
+                        margin-top: 1rem;
+                        margin-left: 0.75rem;
+                        color: $secondary-two;
+                    }
+                }
+            }
+
+            &-button {
+                background: none;
+                border: none;
+                color: $primary-one;
+                padding: none;
+                font-size: 1rem;
+                cursor: pointer;
+
+                &:hover {
+                    color: $secondary-two;
+                    animation: bottomBorderContent 0.2s linear;
+                    animation-fill-mode: forwards;
+                }
+
+                &-container {
+                    margin-top: 1.5rem;
+                }
+            }
+
+            &--p2 {
+                margin: 0;
+            }
+        }
+    }
+}

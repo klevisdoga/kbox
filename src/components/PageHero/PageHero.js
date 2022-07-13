@@ -36,7 +36,7 @@ export default function PageHero() {
                     </div>
                 )
             })}
-            {/* <img src='https://assets.xboxservices.com/assets/ef/2d/ef2db94c-53c1-4913-af12-8a20744375a3.jpg?n=994894_Page-Hero-0_767x1175.jpg' alt='NBA 2k23' className='hero__image'/> */}
+            
         </div>
     )
 }
