@@ -4,7 +4,31 @@
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 1rem;
+
+    &__nav{
+
+        &-group{
+
+        }
+    }
+
+    &__base{
+
+        &-list{
+            display: flex;
+            flex-wrap: wrap;
+            width: 85%;
+        }
+
+        & span {
+            color: $link-dark-two;
+            font-weight: 300;
+            font-size: 11px;
+            margin-right: 1rem;
+            margin-bottom: .25rem;
+        }
+    }
 
     & li {
         margin-bottom: 1rem;
