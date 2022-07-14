@@ -27,22 +27,20 @@
 }
 
 @keyframes cardSlide {
-    0% {
-        bottom: 0;
+    from {
+        margin-top: 5rem;
     }
-    100% {
-        bottom: 13.25%;
+    to {
+        margin-top: 0;
     }
-    
 }
 @keyframes cardSlideTwo {
-    0% {
-        bottom: 0;
+    from {
+        margin-top: 10rem;
     }
-    100% {
-        bottom: 26.4%;
+    to {
+        margin-top: 0;
     }
-    
 }
 
 //Page Hero Animation
@@ -58,19 +56,11 @@
     }
 }
 
-@keyframes cardSlide {
+@keyframes textSlide {
     from {
-        margin-top: 5rem;
+        left: 2rem;
     }
     to {
-        margin-top: 0;
-    }
-}
-@keyframes cardSlideTwo {
-    from {
-        margin-top: 10rem;
-    }
-    to {
-        margin-top: 0;
+        left: 0;
     }
 }

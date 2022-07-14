@@ -98,7 +98,7 @@ export const MainContentCards = [
         image: 'https://assets.xboxservices.com/assets/9e/14/9e14320f-6e0e-4976-bf88-2155c575d159.jpg?n=517749_Large-tout-0_1083x1222.jpg',
         alt: 'a plague tale: requiem poster',
         h2: 'A Plague Tale: Requiem',
-        p: 'The sequel to the award-winning A PLague Tale: Innocence',
+        p: 'The sequel to the award-winning A Plague Tale: Innocence',
         button: 'PRE-ORDER NOW',
         class: 'main__cards-card-text--grey'
     },
@@ -186,7 +186,7 @@ export const MainContentCardsDesktop = [
         image: 'https://assets.xboxservices.com/assets/9e/14/9e14320f-6e0e-4976-bf88-2155c575d159.jpg?n=517749_Large-tout-0_1083x1222.jpg',
         alt: 'a plague tale: requiem poster',
         h2: 'A Plague Tale: Requiem',
-        p: 'The sequel to the award-winning A PLague Tale: Innocence',
+        p: 'The sequel to the award-winning A Plague Tale: Innocence',
         button: 'PRE-ORDER NOW',
         class: 'main__cards-card-text--grey',
         animation: true

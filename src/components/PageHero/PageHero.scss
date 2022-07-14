@@ -81,7 +81,7 @@
         align-items: center;
         width: 100%;
         color: $primary-one;
-        animation: textSlide 0.3s ease-in-out;
+        animation: textSlide 0.3s ease-out;
 
         @include desktop {
             width: fit-content;

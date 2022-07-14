@@ -7,6 +7,10 @@
     flex-direction: column;
     padding: 1rem;
 
+    @include desktop {
+        padding: 1rem 4rem;
+    }
+
     &__nav{
 
         @include tablet{
@@ -16,10 +20,20 @@
             margin-bottom: 1rem;
         }
 
+        @include desktop {
+            justify-content: left;
+        }
+
         &-group{
 
             @include tablet{
                 margin-right: 7rem;
+            }
+
+
+            @include desktop {
+                width: 12rem;
+                margin: 0;
             }
         }
     }
@@ -35,6 +49,11 @@
                 width: 110%;
                 margin-bottom: 2rem;
             }
+
+            @include desktop {
+                width: 100%;
+                justify-content: flex-end;
+            }
         }
 
         & span {
@@ -47,6 +66,10 @@
             @include tablet{
                 margin-right: 2rem;
             }
+        }
+
+        &-notice {
+            text-align: center;
         }
     }
 
