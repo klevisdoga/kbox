@@ -12,6 +12,10 @@
         width: 100vw;
     }
 
+    @include desktop {
+        display: none;
+    }
+
     &__button-right {
         position: absolute;
         top: 42.5%;
@@ -79,11 +83,23 @@
         color: $primary-one;
         animation: textSlide 0.3s ease-in-out;
 
+        @include desktop {
+            width: fit-content;
+            align-items: flex-start;
+            text-align: left;
+            padding-left: 6rem;
+            top: 35%;
+        }
+
         &-subtitle {
             width: 20rem;
 
-            @include tablet{
+            @include tablet {
                 width: 35rem;
+            }
+
+            @include desktop {
+                margin-left: 0;
             }
         }
 
@@ -95,8 +111,8 @@
             margin-bottom: -9px;
 
             &:hover {
-                animation: bottomBorderHero .2s linear;
-                animation-fill-mode:forwards;
+                animation: bottomBorderHero 0.2s linear;
+                animation-fill-mode: forwards;
             }
 
             &-container {
@@ -109,6 +125,15 @@
             }
         }
     }
+
+    &__desktop {
+        display: none;
+        position: relative;
+        overflow-x: hidden;
+        width: 100%;
+
+        @include desktop {
+            display: flex;
+        }
+    }
 }
-
-

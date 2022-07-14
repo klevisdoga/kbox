@@ -1,6 +1,6 @@
 import React from 'react';
 import './PageContent.scss';
-import { MainOptions, MainContentCards } from './PageContentData';
+import { MainOptions, MainContentCards, MainContentCardsDesktop } from './PageContentData';
 
 const PageContent = () => {
     return (
@@ -26,16 +26,31 @@ const PageContent = () => {
                                 <p>{card.p}</p>
                                 {card.p2 ? <p className='main__cards-card--p2'>{card.p2}</p> : ''}
                                 <div className={`main__cards-card-button-container ${card.buttonClass ? 'hero__text-button-container' : ''}`}>
-                                    <button className={ card.buttonClass ? 'hero__text-button' : 'main__cards-card-button'}>{card.button}</button>
+                                    <button className={card.buttonClass ? 'hero__text-button' : 'main__cards-card-button'}>{card.button}</button>
                                 </div>
                             </div>
-
                         </div>
                     )
                 })}
-
             </div>
-
+            <div className='main__cards--desktop'>
+                {MainContentCardsDesktop.map(card => {
+                    return (
+                        <div className={`main__cards-card ${card.cardClass ? card.cardClass : ''}`}>
+                            <img src={card.image} alt={card.alt} className='main__cards-card-image' />
+                            <div className={`main__cards-card-text ${card.class}`}>
+                                <h2 className={card.titleClass}>{card.h2}</h2>
+                                {card.span ? <span className='main__cards-card-text--white--span'>{card.span}</span> : ''}
+                                <p>{card.p}</p>
+                                {card.p2 ? <p className='main__cards-card--p2'>{card.p2}</p> : ''}
+                                <div className={`main__cards-card-button-container ${card.buttonClass ? 'hero__text-button-container' : ''}`}>
+                                    <button className={card.buttonClass ? 'hero__text-button' : 'main__cards-card-button'}>{card.button}</button>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     )
 }

@@ -26,6 +26,25 @@
     }
 }
 
+@keyframes cardSlide {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 13.25%;
+    }
+    
+}
+@keyframes cardSlideTwo {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 26.4%;
+    }
+    
+}
+
 //Page Hero Animation
 @keyframes bottomBorderHero {
     0% {
@@ -39,11 +58,11 @@
     }
 }
 
-@keyframes textSlide {
+@keyframes designLabsSlide {
     0% {
-        left: 1rem;
+        grid-area: 3 / 2 / 4 / 2;
     }
     100% {
-        left: 0;
+        grid-area: 2 / 2 / 4 / 2;
     }
 }
