@@ -68,7 +68,7 @@
                 width: 100%;
                 display: inline-block;
                 grid-row: span 2 / auto;
-                
+
                 &:nth-child(2) {
                     grid-area: 1 / 2 ;
                 }
@@ -87,6 +87,9 @@
                     animation: cardSlideTwo 1.5s ease-in-out;
                     animation-fill-mode: forwards;
                 }
+                &:nth-child(6) {
+                    grid-area: 6 / 1 / 5 / 2;
+                }
                 &:nth-child(7) {
                     animation: cardSlide 1.5s ease-in-out;
                     animation-fill-mode: forwards;
@@ -98,6 +101,7 @@
     
                 &:last-child{
                     grid-area: 8 / 2;
+                    height: 22rem;
                 }
             }
 
@@ -131,13 +135,15 @@
                     margin-bottom: 0;
                     
                     @include desktop {
-                        display: inline-flex;
+                        display: flex;
+                        align-items: center;
                         margin-bottom: 6px;
                     }
 
                     & img {
                         @include desktop {
                             width: 50%;
+                            height: 100%;
                             order: 2;
                         }
                     }
@@ -150,6 +156,7 @@
 
                         @include desktop {
                             padding: 0;
+                            max-width: 50%;
                         }
 
                         & h2 {
