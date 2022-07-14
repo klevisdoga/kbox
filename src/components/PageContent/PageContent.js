@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './PageContent.scss';
 import { MainOptions, MainContentCards, MainContentCardsDesktop } from './PageContentData';
 
 const PageContent = () => {
+
+    const ref = useRef()
     return (
         <div className='main'>
             <div className='main__options'>

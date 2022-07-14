@@ -78,13 +78,19 @@
             }
 
             &:nth-child(4) {
-                animation: designLabsSlide 1s linear;
+                grid-area: 2 / 2 / 4 / 2;
+                animation: cardSlide 1.5s ease-in-out;
+                animation-fill-mode: forwards;
             }
             &:nth-child(5) {
                 grid-area: 5 / 2 / 4 / 4;
                 grid-column: span 2 / auto; 
+                animation: cardSlideTwo 1.5s ease-in-out;
+                animation-fill-mode: forwards;
             }
             &:nth-child(7) {
+                animation: cardSlide 1.5s ease-in-out;
+                animation-fill-mode: forwards;
                 grid-area: 5 / 2 / 9 / 2;
             }
             &:nth-child(8) {

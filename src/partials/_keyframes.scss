@@ -58,11 +58,19 @@
     }
 }
 
-@keyframes designLabsSlide {
-    0% {
-        grid-area: 3 / 2 / 4 / 2;
+@keyframes cardSlide {
+    from {
+        margin-top: 5rem;
     }
-    100% {
-        grid-area: 2 / 2 / 4 / 2;
+    to {
+        margin-top: 0;
+    }
+}
+@keyframes cardSlideTwo {
+    from {
+        margin-top: 10rem;
+    }
+    to {
+        margin-top: 0;
     }
 }
