@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
+import PageFooter from './components/PageFooter/PageFooter';
 import PageNav from './components/PageNav/PageNav';
+import HomePage from './pages/HomePage/HomePage';
 
 function App() {
   return (
@@ -8,8 +10,9 @@ function App() {
       <BrowserRouter>
       <PageNav />
       <Switch>
-        <Route />
+        <Route path={'/'} exact component={HomePage}/>
       </Switch>
+      <PageFooter />
       </BrowserRouter>
     </div>
   );

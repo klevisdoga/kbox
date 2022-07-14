@@ -1,0 +1,140 @@
+@use "../../partials/variables" as *;
+@use "../../partials/keyframes" as *;
+@use "../../partials/mixins" as *;
+
+.hero {
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+
+    &__image {
+        width: 100vw;
+    }
+
+    @include desktop {
+        display: none;
+    }
+
+    &__button-right {
+        position: absolute;
+        top: 42.5%;
+        right: 0;
+        font-size: 3rem;
+        color: $primary-three;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+        width: 50px;
+        height: 50px;
+        background-color: rgba($color: #2e2e2e, $alpha: 0.9);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: #2e2e2e;
+        }
+
+        & span {
+            color: rgb(219, 219, 219);
+            transform: rotate(90deg);
+            font-size: 2rem;
+            font-weight: 200;
+            height: 2.5rem;
+        }
+    }
+
+    &__button-left {
+        @extend .hero__button-right;
+        right: none;
+        left: 0;
+
+        &:hover {
+            background-color: #2e2e2e;
+        }
+
+        & span {
+            color: rgb(219, 219, 219);
+            transform: rotate(-90deg);
+        }
+    }
+
+    &__poster {
+        position: relative;
+        transform: translateX(3px);
+
+        &--active {
+            position: relative;
+            transition: transform 0.2s linear;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 48%;
+        z-index: 1;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        color: $primary-one;
+        animation: textSlide 0.3s ease-out;
+
+        @include desktop {
+            width: 35rem;
+            align-items: flex-start;
+            text-align: left;
+            padding-left: 6rem;
+            top: 35%;
+        }
+
+        &-subtitle {
+            width: 20rem;
+
+            @include tablet {
+                width: 35rem;
+            }
+
+            @include desktop {
+                margin-left: 0;
+                width: auto;
+            }
+        }
+
+        &-button {
+            background: none;
+            border: none;
+            color: $secondary-three;
+            height: 1.2rem;
+            margin-bottom: -9px;
+
+            &:hover {
+                animation: bottomBorderHero 0.2s linear;
+                animation-fill-mode: forwards;
+            }
+
+            &-container {
+                background-color: $secondary-two;
+                border: none;
+                padding: 0.25rem 1.5rem;
+                margin-top: 1rem;
+                cursor: pointer;
+                height: 1.75rem;
+            }
+        }
+    }
+
+    &__desktop {
+        display: none;
+        position: relative;
+        overflow-x: hidden;
+        width: 100%;
+
+        @include desktop {
+            display: flex;
+        }
+    }
+}
